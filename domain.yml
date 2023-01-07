@@ -1,0 +1,113 @@
+version: "3.1"
+
+session_config:
+  session_expiration_time:  
+  carry_over_slots_to_new_session: false
+
+intents:
+- buy_pizza
+- greet
+- inform
+- thanks
+- help
+- affirm
+- stop
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- random
+- request_pizza_form
+
+entities:
+- pizza_size
+- pizza_type
+
+slots:
+  pizza_size:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: pizza_size
+  pizza_type:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: pizza_type
+
+
+forms:
+  simple_pizza_form:
+    required_slots:
+      - pizza_size
+      - pizza_type
+      # - number of pizzas
+
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+    buttons:
+    - title: "want HELP?"
+      payload: "/help"
+    - title: "order NOW"
+      payload: "/buy_pizza"
+
+  utter_help:
+  - text: you can start ordering by typing-> i want pizza 🍕
+  - text: hey HUMAN!, it's pizza order subsystem! just type-> i want pizza 🙄
+
+  utter_cheer_up:
+  - image: https://i.imgur.com/0TfCDeV.png
+    text: 'Here is something to cheer you up:'
+  
+  utter_did_that_help:
+  - text: Did that help you?
+  - text: was it usefull?
+  
+  utter_happy:
+  - text: superb, i'm glad for you
+  
+  utter_thanks:
+  - text: you'r welcome, bye
+  - text: no problem, Bye
+  - text: it's okay, catch you later
+  
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  
+  utter_random:
+  - text: can you stop saying non-sance things! 🤬
+
+
+  utter_submit:
+  - text: preparing your pizza 🍕
+  
+  utter_pizza_slots:
+  - text: Done, enjoy it 😋.
+  
+  utter_ask_continue:
+  - text: Are you sure you want to cansel the form?
+  
+  utter_ask_pizza_size:
+  - text: What size you want( 'small | meduiem | big )?
+
+  utter_ask_pizza_type:
+  - text: in which faviour you want( papparoni | mozarella | normal | italian )?
+
+  utter_order_cancelled:
+  - text : order cancelled 😞
+
+actions:
+- utter_ask_continue
+- utter_greet
+- utter_help
+- utter_thanks
+- utter_random
+- utter_pizza_slots
+- utter_submit
+- validate_simple_pizza_form
+- action_reset_slots

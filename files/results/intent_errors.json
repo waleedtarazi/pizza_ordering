@@ -1,0 +1,10 @@
+[
+  {
+    "text": "just foooling you",
+    "intent": "random",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 0.6875154972076416
+    }
+  }
+]

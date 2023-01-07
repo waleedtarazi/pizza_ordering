@@ -1,0 +1,238 @@
+version: "3.1"
+
+nlu:
+
+# ________________________greet_________________________________
+
+- intent: greet
+  examples: |
+    - hey
+    - hellooo
+    - hola
+    - ahoy
+    - marhaba
+    - islam alikum
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - yo
+    - hello world
+    - hiiiii
+    - hi there
+# _________________________thanks________________________________
+
+- intent: thanks
+  examples: |
+    - thanks, goodbye
+    - thank you
+    - cool
+    - okay thank you
+    - bye
+# __________________________affirm_______________________________
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - sure 
+    - /affirm
+# __________________________deny_______________________________
+
+- intent: deny
+  examples: |
+    - no
+    - nop 
+    - nah
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+# _________________________mood_great________________________________
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+# ___________________mood_unhappy______________________________________
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - im bad i will cray
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+# ____________________stop_____________________________________
+
+- intent: stop
+  examples: |
+    - stop
+    - nevermind
+    - please stop
+    - i want to stop
+    - stop the form
+    - just stop
+    - i don't want anymore
+# __________________bot_challenge_______________________________________
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+# _________________buy_pizza________________________________________
+
+- intent: buy_pizza
+  examples: |
+    - i'd like to buy a pizza
+    - gimme pizza
+    - i want pizza
+    - i want a big pizza
+    - give me small pizza now
+    - let me have a pizza
+    - i want a pizza
+    - i want to make order 
+    - i want ordre
+    - i want one of your pizzas
+    - give me one
+    - gimme one 
+    - is there a pizza?
+    - i want to order a pizza
+    - can i buy a pizza
+    - I'm interested in a savory round flattened bread of Italian origin
+    - i want to buy a pizza
+# _________________starting________________________________________
+
+- intent: help
+  examples: |
+    - how can i order ?
+    - how to start?
+    - who are you?
+    - could you help me!
+    - i need help
+    - can you help me please
+    - what you offer?
+    - would you help me?
+    - what you do?
+    - what is your job
+    - can you tell me what are for?
+    - who are you?
+    - what do you offer
+
+# _________________random________________________________________
+
+- intent: random
+  examples: |
+    - how ckinkk yu ?
+    - whdsfslkfat er
+    - i love you
+    - jjhg gyyuj
+    - she went up
+    - we did well
+    - it's just a bit of project
+    - i lov NLP
+    - i hate math
+    - she is going tommorw for dinner 
+    - yes you are pretty good person
+    - hahaha
+    - you are bad bot and this is trash dear 
+    - get yourseld a real developer
+    - dont go im kidding
+    - yes the car crushed 
+    - sure, let me call her
+    - nuuup i will go for her and i promise you to nail it dear myself
+    - dont do that here!!!!!!!!!
+    - get a rooom!!!!!!
+    - god knows every singl efforts you do
+    - you can gklsdjls dsfdskh kdskhdsfuihdsfhds
+    - just missing around with teh keyboard hahahhahhah  
+    - songs are  great and i will do that 
+    - just foooling you  
+    - how to do such a aathing
+    - jfkldfjdf klfjdsklfldsj
+    - nooough 
+    - ranom data for ever on earth hahah
+    - lets sfo thatttt
+    - dont everlove enyone 
+    - be youself dear
+    
+# _________________inform________________________________________
+
+- intent: inform
+  examples: |
+    - i'd like a [large](pizza_size) pizza
+    - i want to order a [xl](pizza_size) [hawai](pizza_type) pizza
+    - [medium](pizza_size) pizza
+    - [xl](pizza_size)
+    - [small](pizza_size)
+    - [s](pizza_size)
+    - [big](pizza_size)
+    - [meduim](pizza_size)
+    - [normal](pizza_type)
+    - [pepperoni](pizza_type)
+    - give me a [mozerella](pizza_type) pizza
+    - [italian](pizza_type) pizza
+    - [smol](pizza_size)
+    - [italian](pizza_type)
+    - [pappparonni](pizza_type)
+    - i want [large](pizza_size) pizza
+    - i rather a [large](pizza_size) pizza
+    - [mozzarella](pizza_type)
+    - give me a [big](pizza_size) one please
+    - [big](pizza_size) one per favore
+    - [italian](pizza_type)
+    - [fungi](pizza_type)
+    - i want a [large](pizza_size) pizza
+    - [vegggie](pizza_type)
+    - i'd like a [large](pizza_size) pizza
+    - i want to order a [xl](pizza_size) [hawai](pizza_type) pizza
+    - [medium](pizza_size) pizza
+    - [xl](pizza_size)
+    - [small](pizza_size)
+    - [s](pizza_size)
+    - i want a [large](pizza_size) pizza
+    - [mozzarella](pizza_type)
+    - [hawai](pizza_type)
+    - [veggie](pizza_type)
+    - [fungi](pizza_type)
+    - [vegggie](pizza_type)    
+    - i want to buy a [large](pizza_size) pizza
+
+# _________________________________________________________
