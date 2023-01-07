@@ -8,7 +8,6 @@
 my_pizza uses a number of open source to work properly:
 
 - [RASA](https://rasa.com/) - chatbot builder!
-- [python](https://python.org/) - awesome web-based text editor
 
 ## Installation
 
