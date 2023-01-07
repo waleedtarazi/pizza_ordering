@@ -14,7 +14,6 @@ my_pizza uses a number of open source to work properly:
 
 - [RASA](https://rasa.com/) v 3.4.0
 - [python](https://python.org/) v 3.8
-- 
 ## files
 - Actions: contain special responses for users input and some Developer’s functions (like retrieve data…etc.)
 - Data: 
